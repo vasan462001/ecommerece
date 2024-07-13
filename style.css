@@ -1,0 +1,244 @@
+*{
+    padding: 0%;
+    margin:0%;
+}
+body{
+    .baskervville-sc-regular {
+        font-family: "Baskervville SC", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.navbar-links{
+    display: flex;
+    column-gap: 30px;
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color: #10232c;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.navbar-menu-toggle{
+    display:none;
+}
+
+.side-navbar{
+    background-color: #10232c;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top :0;
+    left:0;
+    padding:20px;
+    color: aliceblue;
+    display:none; 
+    transition: 3s;   
+}
+
+.side-navbar-link{
+    margin-bottom: 40px;
+}
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+
+}
+.side-navbar-link a:hover{
+    text-decoration: underline;
+
+}
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 50px;
+}
+.header button{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    background-color: #10232c;
+    color: white;
+}
+.service{
+    padding: 20px;
+}
+.servicecontainer-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicecontainer-2{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.servicecontainer-2 div{
+    background-color: #f3f4f7;
+    border-radius: 5px;
+    padding: 10px;
+}
+.newarrival{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.newarrivalcontain{
+    position: relative;
+    flex-basis: 10%;
+    margin-top: 30px;
+
+}
+.newarrival button{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-top: 10px;
+    color: #10232c;
+    margin-left: 70px;
+    border-radius: 10px;
+    background-color: #10232c;
+    color: #f3f4f7;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.news input{
+    padding: 20px;
+    width: 700px;
+    margin-bottom: 10px;
+    border: solid 2px black;
+}
+
+.news button{
+    margin-top: 20px;
+    color: #f3f4f7;
+    background-color: #10232c;
+    border-radius: 30px;
+    padding: 20px;
+}
+.footer{
+    margin-top: 30px;
+    background-color: #10232c;
+    color: #f3f4f7;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.product{
+    margin-top: 20px;
+}
+
+.productsearch{
+    width: 90%;
+    border: solid 2px black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.productsearch input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.productsearch input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.productsearch input:focus{
+   outline: none;
+}
+
+.collection{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.collectionbox{
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.collectionbox img{
+    border-radius: 10px;
+}
+.collectionbox:hover{
+    background-color:#10232c;
+    color: #f3f4f7;
+    size: 20px;
+}
+.table{
+    background-color: #10232c;
+    color: #f3f4f7;
+    padding: 30px;
+    margin-left:400px;
+    width: 500px;
+    margin-top: 30px;
+    height: 30px;
+    border-radius: 30px;
+   
+}
+.head{
+    text-align: left;
+    padding-bottom: 30px;
+
+}
+.table input{
+    height:50px;
+    width: 500px;
+}
+input{
+    border-radius: 3px;
+    padding: 3px;
+    margin-top: 7px;
+    margin-bottom: 9px;
+}
+
+
+@media screen and (max-width:600px) {
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .headerimage{
+        display: none;
+    }
+    .servicecontainer-1{
+        display: none;
+    }
+    .servicecontainer-2{
+        flex-direction: column;
+    }
+}
